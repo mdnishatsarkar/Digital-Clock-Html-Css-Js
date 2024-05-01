@@ -1,0 +1,112 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Saira Condensed", sans-serif;
+}
+
+#main {
+    background-color: rgb(0, 0, 17);
+    border: 2px solid rgb(0, 0, 79);
+    border-radius: 50%;
+    width: 30rem;
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: .5rem;
+    overflow: hidden;
+    box-shadow: 0px 0px 15px white, inset 0px 0px 20px white;
+}
+
+#day {
+    font-size: 2em;
+    text-transform: uppercase;
+}
+
+#timebar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#time {
+    font-weight: bold;
+    font-size: 5em;
+    display: flex;
+    color: yellow;
+}
+
+#period, #second {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 3rem;
+    font-size: 1.5rem;
+}
+
+#dates {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    font-size: 2em;
+    text-transform: uppercase;
+}
+
+#messege {
+    color: yellow;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    margin-top: 2rem;
+}
+
+.copyright {
+    margin-top: 1.5rem;
+    font-size: x-small;
+    letter-spacing: 1px;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 0;
+    }
+    #main {
+        border-radius: 10px;
+        width: 85%;
+        height: 88%;
+    }
+    #timebar, #dates {
+        font-size: 1em;
+        gap: .5rem;
+    }
+    
+}
